@@ -16,11 +16,6 @@ const custDB = Object.create({}, {
             value: ' ',
             enumerable: true
         },
-        lastName: {
-            value: ' ',
-            enumerable: true
-        },
-
         address: {
             value: "",
             enumerable: true
@@ -30,26 +25,36 @@ const custDB = Object.create({}, {
             enumerable: true
         },
         checkoutBook: {
-            value: "",
+            value: 
+                function(checkBook) {
+                    for (let i = 0; i < libraryDB.length; i++) {
+                        if (checkBook.CheckOut === false) {
+                        checkBook.CheckOut = !libraryDB[i].CheckOut
+                        } 
+                    }
+                
+            },
             enumerable: true
         },
         returnBook: {
-            value: "",
+            value: 
+            function(checkBookIn) {
+                for (let i = 0; i < libraryDB.length; i++) {
+                    if (checkBookIn.CheckOut === true) {
+                    checkBookIn.CheckOut = !libraryDB[i].CheckOut
+                    } 
+                }
+        },
             enumerable: true
         },
-        libraryCardNum: {
-            value: ' ',
-            enumerable: true
-        },
-        checkoutBook: {
-            value: ' ',
-            enumerable: true
-        },
-        returnBook: {
-            value: ' ',
-            enumerable: true
-        },
-
     },
 
 )
+
+// custDB.checkoutBook()
+custDB.checkoutBook(book)
+custDB.returnBook(book1)
+
+console.log('book', book);
+console.log('book1', book1);
+

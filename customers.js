@@ -7,15 +7,19 @@ adelaide.favoriteGenre = 'fiction'
 adelaide.firstName = 'Adelaide'
 adelaide.lastName = 'Yoder'
 adelaide.address = '456 avenue'
+adelaide.libraryCardNum= librarian.registerCust();
 
-console.log('adelaide', adelaide);
+
+console.log('Adelaide', adelaide);
 
 let michael = Object.create({custDB}, {})
 michael.favoriteGenre = 'fiction'
 michael.firstName = 'Michael',
-    michael.lastName = "Roberts",
-    michael.adress = " 265 Karnes Dr. ",
-    console.log('michael', michael);
+michael.lastName = "Roberts",
+michael.adress = " 265 Karnes Dr. ",
+michael.libraryCardNum= librarian.registerCust();
+console.log('Michael', michael);
+
 
 let robert = Object.create({custDB}, {
 })
@@ -23,6 +27,9 @@ robert.favoriteGenre = 'fiction'
 robert.firstName = 'Robert'
 robert.lastName = 'Leedy'
 robert.address = '1428 Timber Ridge Cir'
+robert.libraryCardNum= librarian.registerCust();
+
+console.log('Robret', robert);
 
 
 const jewel = Object.create({custDB}, {
@@ -34,4 +41,5 @@ jewel.lastName= "Ramirez";
 jewel.adress= "666 Elm St.";
 jewel.libraryCardNum= librarian.registerCust();
 
-console.log(jewel)
+console.log('Jewel', jewel)
+
