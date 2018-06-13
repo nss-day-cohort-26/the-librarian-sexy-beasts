@@ -1,6 +1,6 @@
 const custDB = Object.create({}, {
         favoriteGenre: {
-            value: [],
+            value: ' ',
             ennumrable: true
         },
         emptyBookShelf: {
@@ -8,28 +8,28 @@ const custDB = Object.create({}, {
             enumerable: true
         },
         firstName: {
-            value: [],
+            value: ' ',
             enumerable: true
         },
         lastName: {
-            value: [],
+            value: ' ',
             enumerable: true
         },
 
         address: {
-            value: [],
+            value: ' ',
             enumerable: true
         },
         libraryCardNum: {
-            value: [],
+            value: ' ',
             enumerable: true
         },
         checkoutBook: {
-            value: [],
+            value: ' ',
             enumerable: true
         },
         returnBook: {
-            value: [],
+            value: ' ',
             enumerable: true
         },
 

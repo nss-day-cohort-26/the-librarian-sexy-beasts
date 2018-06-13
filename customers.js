@@ -1,14 +1,12 @@
-const custBD = Object.create({}, {
-  favoriteGenre: " ",
-  emptyBookshelf: [ ],
-  firstName: " ",
-  lastName: " ",
-  adress: " ",
-  libraryCardNum: " ",
-  checkoutBook: " ", 
-  returnBook: " "
 
+let robert = Object.create({custDB}, {
 })
+robert.favoriteGenre = 'fiction'
+robert.firstName = 'Robert'
+robert.lastName = 'Leedy'
+robert.address = '1428 Timber Ridge Cir'
+
+
 const jewel = Object.create({custDB}, {
   
 })
@@ -19,3 +17,4 @@ jewel.adress= "666 Elm St.";
 jewel.libraryCardNum= librarian.registerCust();
 
 console.log(jewel)
+
